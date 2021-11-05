@@ -17,9 +17,9 @@ jobs:
     - name: docker login
       env:
         DOCKER_USER: ${{secrets.DOCKER_USER}}
-        DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+        DOCKER_HUB_ACCESS_TOKEN: ${{secrets.DOCKER_HUB_ACCESS_TOKEN}}
       run: |
-        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
+        docker login -u $DOCKER_USER -p $DOCKER_HUB_ACCESS_TOKEN 
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag robinkanters/musicbot:$(date +%s) --tag robinkanters/musicbot:latest
       
