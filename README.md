@@ -6,7 +6,7 @@ This is inefficient but might be handy depending on your usecase.
 
 # Running
 
-Only change the host path to the config file and the version. Find latest version [here](https://github.com/jagrosh/MusicBot/releases).
+Only change the host path to the config file and the version. The latest bot version is ![GitHub release (latest by date)](https://img.shields.io/github/v/release/jagrosh/MusicBot?label=&style=plastic)
 
 ```sh
 docker run -t -i -v /host/path/to/config.txt:/srv/musicbot/config.txt -e JMB_VERSION=x.x.x robinkanters/musicbot
