@@ -17,3 +17,4 @@ docker run -t -i -v /host/path/to/config.txt:/srv/musicbot/config.txt -e JMB_VER
 See https://jmusicbot.com/config/ for sample config.
 
 ## I'm not affiliated with the bot creators, I just made this docker image.
+### The repo for the bot itself is [here](https://github.com/jagrosh/MusicBot).
